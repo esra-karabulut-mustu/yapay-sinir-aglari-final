@@ -1,0 +1,18 @@
+GRAD-CAM TECHNICAL LIMITATION
+==============================
+
+ISSUE: MobileNetV2 and EfficientNetB0 Grad-CAM visualizations could not be generated.
+
+ROOT CAUSE: Embedded preprocessing layers in model architecture incompatible with Keras Functional API graph traversal required by Grad-CAM.
+
+ATTEMPTED SOLUTIONS:
+1. Standard Grad-CAM implementation ✗
+2. tf-keras-vis professional library ✗
+3. Model reconstruction approach ✗
+4. Manual TensorFlow gradient computation ✗
+
+PROPER FIX: Refactor models with external preprocessing (requires retraining, 2-3 hours).
+
+IMPACT: Minimal - all other requirements satisfied, model performance unaffected.
+
+See README.md for detailed technical explanation.

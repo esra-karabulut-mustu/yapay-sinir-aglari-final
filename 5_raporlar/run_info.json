@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-01-21T17:15:58.866013",
+  "args": {
+    "test_mode": true,
+    "epochs": null,
+    "skip_training": false,
+    "skip_gradcam": false,
+    "model": "all"
+  },
+  "split_info": {
+    "train": {
+      "total": 630,
+      "class_0": 324,
+      "class_1": 306
+    },
+    "val": {
+      "total": 135,
+      "class_0": 69,
+      "class_1": 66
+    },
+    "test": {
+      "total": 135,
+      "class_0": 69,
+      "class_1": 66
+    },
+    "class_names": [
+      "pigmented benign keratosis",
+      "melanoma"
+    ]
+  },
+  "tensorflow_version": "2.20.0",
+  "gpu_available": false
+}
